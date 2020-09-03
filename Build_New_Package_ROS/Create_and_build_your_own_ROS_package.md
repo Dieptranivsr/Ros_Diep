@@ -35,7 +35,7 @@ next:
 $ vim Makefile
 ```
 
-```shell
+```Makefile
 in ths file, write
 
 CC      = g++
