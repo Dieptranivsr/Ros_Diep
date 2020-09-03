@@ -1,0 +1,11 @@
+
+
+#Filesystem Tools
+Using rospack
+Usage :
+                $ rospack find [package_name]
+       Exp:     $ rospack find roscpp
+                --> /opt/ros/melodic/share/roscpp
+                cd /opt/ros/melodic/share/roscpp
+Usage :
+                $ roscd roscpp
