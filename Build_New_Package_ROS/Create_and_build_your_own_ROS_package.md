@@ -9,7 +9,7 @@ exp:
 ```shell
 $ nano hello-diep.cpp
 ```
-
+in ths file, write
 ```c++
 #include<iostream>
 
@@ -35,5 +35,22 @@ next:
 $ vim Makefile
 ```
 
+```shell
 in ths file, write
+
+CC      = g++
+CFLAGS  = -g
+RM      = rm -f
+
+default: all
+
+all: hello-diep
+
+hello-diep: hello-diep.cpp
+        $(CC) $(CFLAGS) -o hello-diep hello-diep.cpp
+
+clean:
+        $(RM) hello-diep
+```
+
 
