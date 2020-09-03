@@ -2,7 +2,8 @@
 Learn ROS from web http://wiki.ros.org/
 
 # roscpp
-### roscpp is a ROS client implementation in C++. The main parts of roscpp are:
+roscpp is a C++ implementation of ROS. It provides a client library that enables C++ programmers to quickly interface with ROS Topics, Services, and Parameters. roscpp is the most widely used ROS client library and is designed to be the high-performance library for ROS.
+### The main parts of roscpp are:
 
  * ros::init() : A version of ros::init() must be called before using any of the rest of the ROS system.
  * ros::NodeHandle : Public interface to topics, services, parameters, etc.
