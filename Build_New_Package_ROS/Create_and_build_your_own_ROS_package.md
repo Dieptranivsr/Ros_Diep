@@ -35,9 +35,9 @@ next:
 $ vim Makefile
 ```
 
-```Makefile
 in ths file, write
 
+```Makefile
 CC      = g++
 CFLAGS  = -g
 RM      = rm -f
