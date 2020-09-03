@@ -53,4 +53,15 @@ clean:
         $(RM) hello-diep
 ```
 
+```shell
+$ make
+```
+result:
 
+    g++ -g -o hello-diep hello-diep.cpp
+    
+```shell
+$ make clear
+```
+
+    rm -rf hello-diep
