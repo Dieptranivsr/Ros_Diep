@@ -6,9 +6,12 @@ $ cd build-system
 ```
 exp:
 
-    >>> nano hello-diep.cpp
-    >>> g++ hello-diep.cpp -o hello-diep
-    >>> ls
+```shell
+$ nano hello-diep.cpp
+$ g++ hello-diep.cpp -o hello-diep
+$ ls
+```
+    
 result:
 
     hello-diep   hello-diep.cpp
