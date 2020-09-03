@@ -1,5 +1,6 @@
+------------------------------------------------------------
 # Initialization        :airplane:   :airplane:   :airplane:
-
+------------------------------------------------------------
 ### 1. Initializing the roscpp Node
     sudo apt install python-catkin-tools ros-kinetic-mavlink ros-kinetic-geographic-msgs ros-kinetic-octomap-ros libgeographic-dev geographiclib-tools ros-kinetic-control-toolbox libpopt-dev
     cd ~/catkin_ws/src
