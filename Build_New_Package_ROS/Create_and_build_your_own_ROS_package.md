@@ -59,9 +59,12 @@ $ make
 result:
 
     g++ -g -o hello-diep hello-diep.cpp
-    
+
+next: 
 ```shell
 $ make clear
 ```
 
     rm -rf hello-diep
+
+![Screenshot from 2020-09-03 16-43-23](https://user-images.githubusercontent.com/69444682/92099430-b01a1280-ee04-11ea-9819-3aa6aca069b1.png)
