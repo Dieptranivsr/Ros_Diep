@@ -32,6 +32,7 @@ next:
     
     
 ```shell
+$ rm -rf hello-diep
 $ vim Makefile
 ```
 
@@ -62,9 +63,20 @@ result:
 
 next: 
 ```shell
-$ make clear
+$ make clean
+$ mkdir build
+$ cd build/
+$ cmake ..
+```
+```
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile
 ```
 
-    rm -rf hello-diep
+```shell
+$ make -j8
+```
+```
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  HelloDiep  Makefile
+```
 
 ![Screenshot from 2020-09-03 16-43-23](https://user-images.githubusercontent.com/69444682/92099430-b01a1280-ee04-11ea-9819-3aa6aca069b1.png)
