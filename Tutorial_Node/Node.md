@@ -35,3 +35,9 @@ $ rosnode info /rosout
 
 ![Screenshot from 2020-09-04 23-29-09](https://user-images.githubusercontent.com/69444682/92263225-77faf880-ef06-11ea-9f02-01c75f2ebc26.png)
 
+```shell
+$ rosnode info /turtlesim
+```
+
+![Screenshot from 2020-09-04 23-31-42](https://user-images.githubusercontent.com/69444682/92263408-ce683700-ef06-11ea-8476-287ebef5b039.png)
+
