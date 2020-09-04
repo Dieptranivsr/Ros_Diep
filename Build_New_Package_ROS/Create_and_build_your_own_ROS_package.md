@@ -80,3 +80,25 @@ CMakeCache.txt  CMakeFiles  cmake_install.cmake  HelloDiep  Makefile
 ```
 
 ![Screenshot from 2020-09-03 16-43-23](https://user-images.githubusercontent.com/69444682/92099430-b01a1280-ee04-11ea-9819-3aa6aca069b1.png)
+
+
+test file:
+```shell
+$ ./HelloDiep
+```
+```
+Diep_ws: Hello Everybody
+```
+
+```shell
+$ cd ~/Document/diep_ws
+$ ls src/
+```
+```
+CMakeLists.txt   robot-tutorials
+```
+```shell
+$ mkdir build
+$ cd build
+$ cmake ../src/
+```
