@@ -41,3 +41,18 @@ $ rosnode info /turtlesim
 
 ![Screenshot from 2020-09-04 23-31-42](https://user-images.githubusercontent.com/69444682/92263408-ce683700-ef06-11ea-8476-287ebef5b039.png)
 
+```shell
+$ rosnode ping /turtlesim
+```
+
+![Screenshot from 2020-09-04 23-33-52](https://user-images.githubusercontent.com/69444682/92263916-97deec00-ef07-11ea-9d2e-14195ff5e7a8.png)
+
+```shell
+$ rosrun turtlesim turtlesim_node __name:=twoDWall
+```
+
+![Screenshot from 2020-09-04 23-38-23](https://user-images.githubusercontent.com/69444682/92264018-c230a980-ef07-11ea-9972-f330e2f9f974.png)
+
+
+
+
