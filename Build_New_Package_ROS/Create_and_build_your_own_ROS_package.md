@@ -111,7 +111,7 @@ $ cd ..
 $ rm -rf build/
 $ mkdir build
 $ cd build
-$ cmake ../src/ - DCMAKE_INSTALL_PREFIX=../install
+$ cmake ../src/ - DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
 ```
 
 ![Screenshot from 2020-09-04 21-49-21](https://user-images.githubusercontent.com/69444682/92252496-83472780-eef8-11ea-8795-b827ebfbba15.png)
