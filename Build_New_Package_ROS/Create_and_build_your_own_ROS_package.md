@@ -106,3 +106,15 @@ $ make
 
 ![Screenshot from 2020-09-04 21-44-34](https://user-images.githubusercontent.com/69444682/92251998-d7054100-eef7-11ea-90c9-20f6a8a8e5ef.png)
 
+```shell
+$ cd ..
+$ rm -rf build/
+$ mkdir build
+$ cd build
+$ cmake ../src/ - DCMAKE_INSTALL_PREFIX=../install
+
+![Screenshot from 2020-09-04 21-49-21](https://user-images.githubusercontent.com/69444682/92252496-83472780-eef8-11ea-8795-b827ebfbba15.png)
+
+$ make
+```
+
