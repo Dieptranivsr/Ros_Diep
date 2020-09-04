@@ -27,3 +27,11 @@ $ rosnode
 ```
 
 ![Screenshot from 2020-09-04 23-18-59](https://user-images.githubusercontent.com/69444682/92262337-2a31c080-ef05-11ea-81a2-0e784ecc0195.png)
+
+
+```shell
+$ rosnode info /rosout
+```
+
+![Screenshot from 2020-09-04 23-29-09](https://user-images.githubusercontent.com/69444682/92263225-77faf880-ef06-11ea-9f02-01c75f2ebc26.png)
+
