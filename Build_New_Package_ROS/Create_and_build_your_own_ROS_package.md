@@ -120,3 +120,26 @@ $ cmake ../src/ - DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../deve
 $ make
 ```
 
+```shell
+$ cd ~/Documents/diep-ws
+$ ls
+```
+
+```
+build   devel   src
+```
+
+```shell
+$ rm -rf build/devel
+$ catkin_make
+```
+
+![Screenshot from 2020-09-04 21-49-21](https://user-images.githubusercontent.com/69444682/92256991-b096d400-eefe-11ea-9cf4-f32494486b61.png)
+
+```shell
+$ cd src/robot_tutorials/src
+$ cd ../../../../build-system/hello-diep.cpp .
+$ cat hello-diep.cpp
+```
+
+..................................................
