@@ -55,6 +55,9 @@ $ rosrun turtlesim turtlesim_node __name:=twoDWall
 
 ```shell
 $ rosnode list
+$ rosnode cleanup
+$ rosnode list
 ```
-![Screenshot from 2020-09-04 23-39-58](https://user-images.githubusercontent.com/69444682/92264177-091e9f00-ef08-11ea-8134-1e0148ec3766.png)
+
+![Screenshot from 2020-09-04 23-47-59](https://user-images.githubusercontent.com/69444682/92264863-17b98600-ef09-11ea-98c0-dee75d6a0aac.png)
 
