@@ -101,7 +101,8 @@ CMakeLists.txt   robot-tutorials
 $ mkdir build
 $ cd build
 $ cmake ../src/
+$ make
 ```
 
-![Screenshot from 2020-09-04 21-42-32](https://user-images.githubusercontent.com/69444682/92251858-a3c2b200-eef7-11ea-8638-b4a4432a9e22.png)
+![Screenshot from 2020-09-04 21-44-34](https://user-images.githubusercontent.com/69444682/92251998-d7054100-eef7-11ea-90c9-20f6a8a8e5ef.png)
 
