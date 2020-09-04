@@ -1,5 +1,9 @@
-cmake_minimum_required (VERSION 2.8)
-project (HelloDiep)
-
-add_executable(HelloDiep hello-diep.cpp)
+# run the ROS master
+```shell
+$ roscore
+```
+# command ROS to list all the notes
+```shell
+$ rosnode list
+```
 
