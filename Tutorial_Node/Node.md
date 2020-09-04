@@ -53,6 +53,8 @@ $ rosrun turtlesim turtlesim_node __name:=twoDWall
 
 ![Screenshot from 2020-09-04 23-38-23](https://user-images.githubusercontent.com/69444682/92264018-c230a980-ef07-11ea-9972-f330e2f9f974.png)
 
-
-
+```shell
+$ rosnode list
+```
+![Screenshot from 2020-09-04 23-39-58](https://user-images.githubusercontent.com/69444682/92264177-091e9f00-ef08-11ea-8134-1e0148ec3766.png)
 
