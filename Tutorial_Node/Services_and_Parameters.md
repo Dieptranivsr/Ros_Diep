@@ -33,3 +33,14 @@ $ rosnode list
 $ rostopic list
 ```
 ![Screenshot from 2020-09-05 21-30-49](https://user-images.githubusercontent.com/69444682/92307255-26627480-efbf-11ea-9a5c-360f0afab05a.png)
+
+```shell
+$ rosparam get /background_b
+$ rosparam set /background_b 0
+$ rosparam set /background_g 0
+$ rosparam set /background_r 0
+$ r
+```
+![Screenshot from 2020-09-05 21-35-35](https://user-images.githubusercontent.com/69444682/92307628-e224a380-efc1-11ea-88f6-7a6cdb87e674.png)
+![Screenshot from 2020-09-05 21-36-15](https://user-images.githubusercontent.com/69444682/92307629-e355d080-efc1-11ea-88da-36daea3dd240.png)
+
