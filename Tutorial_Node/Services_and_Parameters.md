@@ -26,3 +26,10 @@ $ rosservice call /reset
 $ rosservice info /spawn
 ```
 ![Screenshot from 2020-09-05 21-25-46](https://user-images.githubusercontent.com/69444682/92307157-712fbc80-efbe-11ea-97aa-c555d9c552fa.png)
+
+```shell
+$ rosservice call /spawn 7 2 3.14 ""
+$ rosnode list
+$ rostopic list
+```
+![Screenshot from 2020-09-05 21-30-49](https://user-images.githubusercontent.com/69444682/92307255-26627480-efbf-11ea-9a5c-360f0afab05a.png)
