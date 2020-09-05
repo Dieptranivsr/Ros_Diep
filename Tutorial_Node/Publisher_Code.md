@@ -43,6 +43,7 @@ $ rosnode list
 ```
 ![Screenshot from 2020-09-05 11-55-14](https://user-images.githubusercontent.com/69444682/92301590-36626000-ef8f-11ea-8775-d9a87b2fc019.png)
 fix code
+
 ```python
 import rospy
 from std_msgs.msg import String, Int8
@@ -66,3 +67,19 @@ if __name__ == '__main__':
 
 ![Screenshot from 2020-09-05 11-56-42](https://user-images.githubusercontent.com/69444682/92301066-8b4fa780-ef8a-11ea-9af6-54f54050b734.png)
 ![Screenshot from 2020-09-05 11-57-15](https://user-images.githubusercontent.com/69444682/92301071-986c9680-ef8a-11ea-9386-870cd6391bcc.png)
+
+```python
+$ rosptopic echo /Hello
+$ rosrun rqt_graph rqt_graph
+$ rosptopic echo /Hello
+
+```
+![Screenshot from 2020-09-05 11-58-34](https://user-images.githubusercontent.com/69444682/92301709-0ff0f480-ef90-11ea-89b8-96ad53b29223.png)
+
+![Screenshot from 2020-09-05 11-59-48](https://user-images.githubusercontent.com/69444682/92301728-3d3da280-ef90-11ea-9000-507717e15984.png)
+
+
+
+
+
+
