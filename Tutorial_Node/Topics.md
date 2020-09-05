@@ -32,3 +32,10 @@ $ rosmsg show geometry_msgs/Twist
 $ rosrun rqt_graph rqt_graph
 ```
 ![Screenshot from 2020-09-05 09-38-05](https://user-images.githubusercontent.com/69444682/92296136-90e1c900-ef5b-11ea-820f-4a91cac571a5.png)
+
+### exit window "rqt_graph_RosGraph - rqt"
+```shell
+$ rostopic -h
+$ rostopic info /turtle1/cmd_velrostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+```
+![Screenshot from 2020-09-05 09-56-16](https://user-images.githubusercontent.com/69444682/92296354-0fd80100-ef5e-11ea-979e-1b691a51b498.png)
