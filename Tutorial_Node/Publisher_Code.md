@@ -36,3 +36,11 @@ $ cd Documents/diep_ws/src/robot_tutorials/scripts/
 $ python wallE.py
 ```
 ![Screenshot from 2020-09-05 14-50-43](https://user-images.githubusercontent.com/69444682/92301047-56dbeb80-ef8a-11ea-844d-da1bce0fca74.png)
+
+in the new terminal
+```shell
+$ rosnode list
+$ rosnode l
+```
+![Screenshot from 2020-09-05 11-56-42](https://user-images.githubusercontent.com/69444682/92301066-8b4fa780-ef8a-11ea-9af6-54f54050b734.png)
+![Screenshot from 2020-09-05 11-57-15](https://user-images.githubusercontent.com/69444682/92301071-986c9680-ef8a-11ea-9386-870cd6391bcc.png)
