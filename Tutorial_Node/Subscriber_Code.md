@@ -82,3 +82,29 @@ if __name__ == '__main__':
 ```
 ![Screenshot from 2020-09-05 16-31-02](https://user-images.githubusercontent.com/69444682/92302506-f901d080-ef96-11ea-87d0-ec70c6d1a6c7.png)
 
+```shell
+run again commanline
+$ roscore
+```
+
+```shell
+in new terminal
+$ cd ~/Documents/diep_ws/
+$ source devel/setup.bash
+```
+
+```shell
+in new terminal
+$ source Documents/diep_ws/devel/setup.bash
+```
+
+
+```shell
+in new terminal
+$ rosrun robot_tutorials wallE.py
+```
+
+```shell
+in new terminal
+$ rosrun robot_tutorials Eva.py
+```
