@@ -56,3 +56,6 @@ $ rosrun rqt_graph rqt_graph
 ```
 ![Screenshot from 2020-09-05 10-07-35](https://user-images.githubusercontent.com/69444682/92296516-b1ac1d80-ef5f-11ea-8b24-12d2820aa000.png)
 
+![Screenshot from 2020-09-05 10-17-27](https://user-images.githubusercontent.com/69444682/92296698-8296ab80-ef61-11ea-8a55-55d5ef7cd5a7.png)
+![Screenshot from 2020-09-05 10-19-03](https://user-images.githubusercontent.com/69444682/92296699-83c7d880-ef61-11ea-93ed-df425d9355d5.png)
+![Screenshot from 2020-09-05 10-20-05](https://user-images.githubusercontent.com/69444682/92296700-83c7d880-ef61-11ea-9947-ece185ef9c94.png)
