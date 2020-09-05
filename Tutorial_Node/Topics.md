@@ -49,3 +49,10 @@ $ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.0, 0.0, 0.0]' '[0.
 $ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[5.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
 ```
 ![Screenshot from 2020-09-05 09-59-20](https://user-images.githubusercontent.com/69444682/92296405-7e1cc380-ef5e-11ea-8fc6-63ebbe6af66b.png)
+
+```shell
+$ rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 -- '[4.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+$ rosrun rqt_graph rqt_graph
+```
+![Screenshot from 2020-09-05 10-07-35](https://user-images.githubusercontent.com/69444682/92296516-b1ac1d80-ef5f-11ea-8b24-12d2820aa000.png)
+
