@@ -39,3 +39,13 @@ $ rostopic -h
 $ rostopic info /turtle1/cmd_velrostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
 ```
 ![Screenshot from 2020-09-05 09-56-16](https://user-images.githubusercontent.com/69444682/92296354-0fd80100-ef5e-11ea-979e-1b691a51b498.png)
+```shell
+$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+
+$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[3.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+
+$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+
+$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[5.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+```
+![Screenshot from 2020-09-05 09-59-20](https://user-images.githubusercontent.com/69444682/92296405-7e1cc380-ef5e-11ea-8fc6-63ebbe6af66b.png)
