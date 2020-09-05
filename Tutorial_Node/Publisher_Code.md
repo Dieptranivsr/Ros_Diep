@@ -28,3 +28,11 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
+
+in the new terminal
+```shell
+$ roscore
+$ cd Documents/diep_ws/src/robot_tutorials/scripts/
+$ python wallE.py
+```
+![Screenshot from 2020-09-05 14-50-43](https://user-images.githubusercontent.com/69444682/92301047-56dbeb80-ef8a-11ea-844d-da1bce0fca74.png)
