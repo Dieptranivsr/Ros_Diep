@@ -72,11 +72,49 @@ if __name__ == '__main__':
 $ rosptopic echo /Hello
 $ rosrun rqt_graph rqt_graph
 $ rosptopic echo /Hello
-
 ```
+
 ![Screenshot from 2020-09-05 11-58-34](https://user-images.githubusercontent.com/69444682/92301709-0ff0f480-ef90-11ea-89b8-96ad53b29223.png)
 
 ![Screenshot from 2020-09-05 11-59-48](https://user-images.githubusercontent.com/69444682/92301728-3d3da280-ef90-11ea-9000-507717e15984.png)
+
+fix code
+```python
+import rospy
+from std_msgs.msg import String, Int8
+
+def wallE_talker():
+    hello_pub = rospy.Publisher('Hello', String, queue_size = 10)
+    hello_pub_int = rospy.Publisher('Hello_int', Int8, queue_size = 10)
+    rospy.init_node('wallE', anonymous = False)
+    rate = rospy.Rate(10)
+    counter = 0
+    while not rospy.is_shutdown():
+        greeting = "Hello, Every Body!"
+        greeting_int = ord(greeting[counter%len(greeting)])
+        rospy.loginfo(greeting)
+        hello_pub.publish(greeting)
+        hello_pub_int.publish(greeting_int)
+        counter += 1
+        rate.sleep()
+
+if __name__ == '__main__':
+    try:
+        wallE_talker()
+    except rospy.ROSInterruptException:
+        pass
+```
+
+```python
+$ python wallE.py
+$ rostopic list
+$ rostopic echo /Hello_int
+```
+![Screenshot from 2020-09-05 14-51-40](https://user-images.githubusercontent.com/69444682/92301787-c6ed7000-ef90-11ea-9895-cbdac3e4a0f0.png)
+
+![Screenshot from 2020-09-05 14-52-27](https://user-images.githubusercontent.com/69444682/92301768-a9200b00-ef90-11ea-90e8-b345c3104a3e.png)
+
+
 
 
 
