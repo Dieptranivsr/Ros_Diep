@@ -14,3 +14,6 @@ roscpp is a C++ implementation of ROS. It provides a client library that enables
  * ros::names : Contains functions for manipulating ROS graph resource names
 ### Examples
 Many examples of using ROS can be found on the wiki and in the roscpp_tutorials package.
+
+### File in Melodic
+![](https://dev.px4.io/master/assets/diagrams/PX4_Architecture.svg)
