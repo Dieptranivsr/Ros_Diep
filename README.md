@@ -23,6 +23,14 @@ All PX4 airframes share a single codebase (this includes other robotic systems l
  * All functionality is divided into exchangeable and reusable components
  * Communication is done by asynchronous message passing
  * The system can deal with varying workload
-### High-Level Software Architecture
+### High-Level Software Architecture [https://dev.px4.io/master/en/concept/architecture.html]
 The diagram below provides a detailed overview of the building blocks of PX4. The top part of the diagram contains middleware blocks, while the lower section shows the components of the flight stack.
 ![](https://dev.px4.io/master/assets/diagrams/PX4_Architecture.svg)
+
+### Flight Stack
+The flight stack is a collection of guidance, navigation and control algorithms for autonomous drones. It includes controllers for fixed wing, multirotor and VTOL airframes as well as estimators for attitude and position.
+
+The following diagram shows an overview of the building blocks of the flight stack. It contains the full pipeline from sensors, RC input and autonomous flight control (Navigator), down to the motor or servo control (Actuators).
+
+
+![](https://dev.px4.io/master/assets/diagrams/PX4_High-Level_Flight-Stack.svg)
