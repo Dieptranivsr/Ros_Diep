@@ -15,5 +15,14 @@ roscpp is a C++ implementation of ROS. It provides a client library that enables
 ### Examples
 Many examples of using ROS can be found on the wiki and in the roscpp_tutorials package.
 
-### File in Melodic
+### PX4 Architectural Overview
+PX4 consists of two main layers: the flight stack is an estimation and flight control system, and the middleware is a general robotics layer that can support any type of autonomous robot, providing internal/external communications and hardware integration.
+
+All PX4 airframes share a single codebase (this includes other robotic systems like boats, rovers, submarines etc.). The complete system design is reactive, which means that:
+
+ * All functionality is divided into exchangeable and reusable components
+ * Communication is done by asynchronous message passing
+ * The system can deal with varying workload
+### High-Level Software Architecture
+The diagram below provides a detailed overview of the building blocks of PX4. The top part of the diagram contains middleware blocks, while the lower section shows the components of the flight stack.
 ![](https://dev.px4.io/master/assets/diagrams/PX4_Architecture.svg)
