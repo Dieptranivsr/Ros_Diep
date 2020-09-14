@@ -20,7 +20,8 @@ $ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 ```shell
 $ cd ~/<my_folder>/<workspace_ws>
 $ catkin_make
-
+```
+![Screenshot from 2020-09-14 22-49-22](https://user-images.githubusercontent.com/69444682/93108050-91592d00-f6dc-11ea-9083-04cde2f54f3d.png)
 
 
 
