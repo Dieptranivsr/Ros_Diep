@@ -2,10 +2,25 @@
 ### Let's create and build a catkin workspace:
 ```shell
 $ cd ~/<my_folder>/
-$ mkdir -p ~/<workspace_ws>/src
-$ cd ~/<workspace_ws>/src
+$ mkdir -p ~/<my_folder>/<workspace_ws>/src
+$ cd ~/<my_folder>/<workspace_ws>/src
 $ catkin_init_workspace
 $ cd ..
 $ catkin_make
 ```
+
+### Creating a catkin Package
+```shell
+$ cd ~/<my_folder>/<workspace_ws>/src
+$ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
+# catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
+```
+
+### Building a catkin workspace and sourcing the setup file
+```shell
+$ cd ~/<my_folder>/<workspace_ws>
+$ catkin_make
+
+
+
 
