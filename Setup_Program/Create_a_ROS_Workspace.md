@@ -35,6 +35,14 @@ $ rospack find beginner_tutorials
 /home/dieptran/Documents/ros_ws/src/beginner_tutorials
 ```
 
+### package dependencies
+When using catkin_create_pkg earlier, a few package dependencies were provided. These first-order dependencies can now be reviewed with the rospack tool.
+```shell
+$ rospack depends1 beginner_tutorials
+   roscpp
+   rospy
+   std_msgs
+```
 
 
 
