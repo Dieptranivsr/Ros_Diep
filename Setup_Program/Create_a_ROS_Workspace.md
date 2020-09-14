@@ -54,8 +54,46 @@ In order to make easy navigating with command-line tools such as "ls, cd, find",
 in my ROS_Workspace path
 ```
 
+### Indirect dependencies
+In many cases, a dependency will also have its own dependencies. For instance, rospy has other dependencies.
+```shell
+$ rospack depends1 rospy
+   genpy
+   roscpp
+   rosgraph
+   rosgraph_msgs
+   roslib
+   std_msgs
+```
 
-
+A package can have quite a few indirect dependencies. Luckily rospack can recursively determine all nested dependencies.
+```shell
+$ rospack depends beginner_tutorials
+   cpp_common
+   rostime
+   roscpp_traits
+   roscpp_serialization
+   catkin
+   genmsg
+   genpy
+   message_runtime
+   gencpp
+   geneus
+   gennodejs
+   genlisp
+   message_generation
+   rosbuild
+   rosconsole
+   std_msgs
+   rosgraph_msgs
+   xmlrpcpp
+   roscpp
+   rosgraph
+   ros_environment
+   rospack
+   roslib
+   rospy
+```
 
 
 
