@@ -14,6 +14,7 @@ $ cmake ../src/ -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
 $ make
 $ cd ..
 $ rm -rf build/ devel/
+$ catkin_make
 ```
 ![Screenshot from 2020-09-15 01-40-52](https://user-images.githubusercontent.com/69444682/93124879-83170b00-f6f4-11ea-8779-778c8cc289eb.png)
 
