@@ -23,11 +23,16 @@ $ catkin_make
 ```
 ![Screenshot from 2020-09-14 22-49-22](https://user-images.githubusercontent.com/69444682/93108050-91592d00-f6dc-11ea-9083-04cde2f54f3d.png)
 
-After the workspace has been built it has created a similar structure in the devel subfolder as you usually find under /opt/ros/$ROSDISTRO_NAME.
-
-To add the workspace to your ROS environment you need to source the generated setup file:
 ```shell
-$ . ~/<my_folder>/<workspace_ws>/devel/setup.bash
+$ cd
+$ clear
+$ rospack find beginner_tutorials
+[rospack] Error: package 'beginner_tutorials' not found
+$ cd ~/Documents/ros_ws/
+$ source devel/setup.bash
+$ cd
+$ rospack find beginner_tutorials
+/home/dieptran/Documents/ros_ws/src/beginner_tutorials
 ```
 
 
