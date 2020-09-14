@@ -43,6 +43,17 @@ $ rospack depends1 beginner_tutorials
    rospy
    std_msgs
 ```
+As you can see, rospack lists the same dependencies that were used as arguments when running catkin_create_pkg. These dependencies for a package are stored in the package.xml file:
+```shell
+$ roscd beginner_tutorials
+$ cat package.xml
+```
+```note
+So navigating with command-line tools such as ls, cd, find, you must run command line: 
+   $ source devel/setup.bash
+in my ROS_Workspace
+```
+
 
 
 
