@@ -49,38 +49,11 @@ $ roscd beginner_tutorials
 $ cat package.xml
 ```
 ```note
-So navigating with command-line tools such as ls, cd, find, you must run command line: 
+In order to make easy navigating with command-line tools such as "ls, cd, find", you must run command line: 
    $ source devel/setup.bash
-in my ROS_Workspace
+in my ROS_Workspace path
 ```
 
-```plantuml
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
-skinparam defaultTextAlignment center
-!include ICONURL/common.puml
-!include ICONURL/font-awesome-5/gitlab.puml
-!include ICONURL/font-awesome-5/java.puml
-!include ICONURL/font-awesome-5/rocket.puml
-!include ICONURL/font-awesome/newspaper_o.puml
-FA_NEWSPAPER_O(news,good news!,node) #White {
-FA5_GITLAB(gitlab,GitLab.com,node) #White
-FA5_JAVA(java,PlantUML,node) #White
-FA5_ROCKET(rocket,Integrated,node) #White
-}
-gitlab ..> java
-java ..> rocket
-```
-
-1.   Item 1
-1.   Item 2
-
-     ```ruby
-     def hello
-        puts "Hello world!"
-     end
-     ```
-
-1.   Item 3
 
 
 
