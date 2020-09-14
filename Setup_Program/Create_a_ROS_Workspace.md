@@ -5,6 +5,7 @@ $ cd ~/<my_folder>/
 $ mkdir -p ~/<workspace_ws>/src
 $ cd ~/<workspace_ws>/src
 $ catkin_init_workspace
+$ cd ..
 $ catkin_make
 ```
 
