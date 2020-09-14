@@ -3,7 +3,8 @@
 ```shell
 $ cd ~/<my_folder>/
 $ mkdir -p ~/<workspace_ws>/src
-$ cd ~/<workspace_ws>/
+$ cd ~/<workspace_ws>/src
+$ catkin_init_workspace
 $ catkin_make
 ```
 
