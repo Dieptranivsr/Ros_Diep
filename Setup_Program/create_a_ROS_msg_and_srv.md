@@ -16,7 +16,39 @@ msgs are just simple text files with a field type and field name per line. The f
 There is also a special type in ROS: 
 Header, the header contains a timestamp and coordinate frame information that are commonly used in ROS. 
 You will frequently see the first line in a msg file have Header header.
- 
+
+### Using msg
+```shell
+$ roscd beginner_tutorials
+$ mkdir msg
+$ echo "int64 num" > msg/Num.msg
+```
+There's one more step, though. We need to make sure that the msg files are turned into source code for C++, Python, and other languages:
+Open package.xml, and make sure these two lines are in it and uncommented:
+```xml
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+```
+Note that at build time, we need "message_generation", while at runtime, we only need "message_runtime".
+Open CMakeLists.txt in your favorite text editor (rosed from the previous tutorial is a good option).
+Add the message_generation dependency to the find_package call which already exists in your CMakeLists.txt so that you can generate messages. You can do this by simply adding message_generation to the list of COMPONENTS such that it looks like this:
+```txt
+# Do not just add this to your CMakeLists.txt, modify the existing text to add message_generation before the closing parenthesis
+find_package(catkin REQUIRED COMPONENTS
+   roscpp
+   rospy
+   std_msgs
+   message_generation
+)
+```
+
+
+
+
+
+
+
+
 
 
 
