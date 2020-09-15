@@ -142,9 +142,37 @@ int64 a
 int64 b
 ---
 int64 sum
+```
 
+### Common step for msg and srv
 
+Uncomment it and add any packages you depend on which contain .msg files that your messages use (in this case std_msgs), such that it looks like this:
 
+```txt
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+```
+Now that we have made some new messages we need to make our package again:
+```shell
+# In your catkin workspace
+$ roscd beginner_tutorials
+$ cd ../..
+$ catkin_make
+$ cd -
+```
+
+### Review
+Let's just list some of the commands we've used so far:
+ * rospack = ros+pack(age) : provides information related to ROS packages
+ * roscd = ros+cd : changes directory to a ROS package or stack
+ * rosls = ros+ls : lists files in a ROS package
+ * roscp = ros+cp : copies files from/to a ROS package
+ * rosmsg = ros+msg : provides information related to ROS message definitions
+ * rossrv = ros+srv : provides information related to ROS service definitions
+ * catkin_make : makes (compiles) a ROS package
+   * rosmake = ros+make : makes (compiles) a ROS package (if you're not using a catkin workspace)
 
 
 
