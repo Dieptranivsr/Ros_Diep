@@ -33,7 +33,8 @@ Note that at build time, we need "message_generation", while at runtime, we only
 Open CMakeLists.txt in your favorite text editor (rosed from the previous tutorial is a good option).
 Add the message_generation dependency to the find_package call which already exists in your CMakeLists.txt so that you can generate messages. You can do this by simply adding message_generation to the list of COMPONENTS such that it looks like this:
 ```txt
-# Do not just add this to your CMakeLists.txt, modify the existing text to add message_generation before the closing parenthesis
+# Do not just add this to your CMakeLists.txt, 
+modify the existing text to add message_generation before the closing parenthesis
 find_package(catkin REQUIRED COMPONENTS
    roscpp
    rospy
@@ -41,8 +42,26 @@ find_package(catkin REQUIRED COMPONENTS
    message_generation
 )
 ```
-
-
+Also make sure you export the message runtime dependency.
+```txt
+catkin_package(
+  ...
+  CATKIN_DEPENDS message_runtime ...
+  ...)
+```
+Uncomment this block of code and fix: 
+```txt
+add_message_files(
+  FILES
+  Num.msg
+)
+```
+```txt
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+```
 
 
 
