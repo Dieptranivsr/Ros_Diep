@@ -63,6 +63,85 @@ generate_messages(
 )
 ```
 
+### Using rosmsg
+
+``` shell
+$ rosmsg show [message type]
+$ rosmsg show beginner_tutorials/Num
+   int64 num
+$ rosmsg show Num
+   [beginner_tutorials/Num]:
+   int64 num
+```
+
+### Using srv
+Let's use the package we just created to create a srv:
+
+```shell
+$ roscd beginner_tutorials
+$ mkdir srv
+```
+
+Now we can copy a service from the rospy_tutorials package:
+```shell
+$ roscp [package_name] [file_to_copy_path] [copy_path]
+$ roscp rospy_tutorials AddTwoInts.srv srv/AddTwoInts.srv
+```
+There's one more step, though. We need to make sure that the srv files are turned into source code 
+for C++, Python, and other languages.
+Unless you have done so already, open package.xml, and make sure these two lines are in it and uncommented:
+```xml
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+```
+As before, note that at build time, we need "message_generation", 
+while at runtime, we only need "message_runtime".
+
+Unless you have done so already for messages in the previous step, 
+add the message_generation dependency to generate messages in CMakeLists.txt:
+
+```txt
+# Do not just add this line to your CMakeLists.txt, modify the existing line
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  message_generation
+)
+```
+And replace the placeholder Service*.srv files for your service files:
+```txt
+add_service_files(
+  FILES
+  AddTwoInts.srv
+)
+```
+
+### Using rossrv
+That's all you need to do to create a srv. Let's make sure that ROS can see it using the rossrv show command.
+
+```shell
+$ rossrv show <service type>
+$ rossrv show beginner_tutorials/AddTwoInts
+  int64 a
+  int64 b
+  ---
+  int64 sum
+```
+
+```shell
+$ rossrv show AddTwoInts
+[beginner_tutorials/AddTwoInts]:
+int64 a
+int64 b
+---
+int64 sum
+
+[rospy_tutorials/AddTwoInts]:
+int64 a
+int64 b
+---
+int64 sum
 
 
 
