@@ -159,7 +159,7 @@ Now that we have made some new messages we need to make our package again:
 # In your catkin workspace
 $ roscd beginner_tutorials
 $ cd ../..
-$ catkin_make
+$ catkin_make install
 $ cd -
 ```
 
