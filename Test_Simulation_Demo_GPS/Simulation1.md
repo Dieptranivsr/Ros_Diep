@@ -190,13 +190,11 @@ status:
 
 ```
 
-
-
-```
-
 ```shell
 $ rosrun echo /mavros/global_position/global
 ```
+![Screenshot from 2020-09-19 01-52-56](https://user-images.githubusercontent.com/69444682/93634483-e073ca80-fa1a-11ea-8713-e890644dab05.png)
+
 ```shell
 $ rosrun mavros mavsafety arm
 $ rosrun mavros mavsys mode -c OFFBOARD
