@@ -12,6 +12,8 @@ $ python  ~/DroneIVSR/GAAS/demo/tutorial_2/2_Struction_from_Motion/px4_mavros_ru
 ```
 ```shell
 $ rostopic echo /diagnostics
+```
+```
 ---
 header: 
   seq: 1531
