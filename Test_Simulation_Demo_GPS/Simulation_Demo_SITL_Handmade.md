@@ -1,5 +1,5 @@
-# Make sure status of PX4 is SITL
-# Check file iris.sdf 
+### Make sure status of PX4 is SITL
+### Check file iris.sdf 
 ```sdf
       <serialEnabled>0</serialEnabled>                <!--mo phon tren may tinh>
       <serialDevice>/dev/ttyACM0</serialDevice>
