@@ -11,10 +11,10 @@ The following table lists the compiler executables supported by the CDT CMake bu
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | gcc  | GNU Project  | C  | Yes | Yes  | Yes | Yes (-imacros) | Yes (-imacros)  | cc, cc.exe, gcc, gcc.exe, ".+-gcc", ".+-gcc.exe" |
 | g++  | GNU Project  | C++  | Yes | Yes  | Yes | Yes (-imacros) | Yes (-imacros)  | c++, c++.exe, g++, g++.exe, ".+-g\+\+", ".+-g\+\+.exe", ".+-c\+\+", ".+-c\+\+.exe" |
-| gcc  | GNU Project  | C  | Yes | Yes  | Yes | Yes (-imacros) | Yes (-imacros)  | cc, cc.exe, gcc, gcc.exe, ".+-gcc", ".+-gcc.exe" |
-| gcc  | GNU Project  | C  | Yes | Yes  | Yes | Yes (-imacros) | Yes (-imacros)  | cc, cc.exe, gcc, gcc.exe, ".+-gcc", ".+-gcc.exe" |
-| gcc  | GNU Project  | C  | Yes | Yes  | Yes | Yes (-imacros) | Yes (-imacros)  | cc, cc.exe, gcc, gcc.exe, ".+-gcc", ".+-gcc.exe" |
-| gcc  | GNU Project  | C  | Yes | Yes  | Yes | Yes (-imacros) | Yes (-imacros)  | cc, cc.exe, gcc, gcc.exe, ".+-gcc", ".+-gcc.exe" |
+| clang  | LLVM  | C  | Yes | Yes  | Yes | N/A | Yes (-imacros)  | clang, clang.exe |
+| clang++  | LLVM  | C++  | Yes | Yes  | Yes | N/A | Yes (-imacros)  | clang++, clang++.exe |
+| cc  | POSIX  | C  | Yes | Yes  | No | No | No  | cc, cc.exe |
+| c++  | POSIX  | C++  | Yes | Yes  | No | No | No  | c++, c++.exe |
 
 
 ### Target Triplet
