@@ -16,6 +16,10 @@ The following table lists the compiler executables supported by the CDT CMake bu
 | cc  | POSIX  | C  | Yes | Yes  | No | No | No  | cc, cc.exe |
 | c++  | POSIX  | C++  | Yes | Yes  | No | No | No  | c++, c++.exe |
 
+Remarks:
+
+ * ".+-gcc" This representes a Java regular expression that also matches a target triplet, thus allowing to work with cross-compilers named like e.g. arm-none-eabi-gcc.
+ * ".+-g\+\+" This representes a Java regular expression that also matches a target triplet, thus allowing to work with cross-compilers named like e.g. arm-none-eabi-g++.
 
 ### Target Triplet
 
