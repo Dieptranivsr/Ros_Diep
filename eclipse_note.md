@@ -8,9 +8,9 @@ The following table lists the compiler executables supported by the CDT CMake bu
 
 
 | Compiler | Vendor/Standard  | Language | Macros  | Include directories | System include directories  | Macros file | Include file | Compiler executables |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | First Header  | Second Header | First Header  | Second Header |
-| Content Cell  | Content Cell  | First Header  | Second Header | First Header  | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | First Header  | Second Header | First Header  | Second Header | Second Header | First Header  | Second Header |
+| Content Cell  | Content Cell  | First Header  | Second Header | First Header  | Second Header | Second Header | First Header  | Second Header |
 
 ### Target Triplet
 
