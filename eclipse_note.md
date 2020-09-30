@@ -7,10 +7,10 @@ The following table lists the compiler executables supported by the CDT CMake bu
 
 
 
-| First Header  | Second Header || First Header  | Second Header || First Header  | Second Header |
-| ------------- | ------------- || First Header  | Second Header || First Header  | Second Header |
-| Content Cell  | Content Cell  || First Header  | Second Header || First Header  | Second Header |
-| Content Cell  | Content Cell  || First Header  | Second Header || First Header  | Second Header |
+| First Header  | Second Header | First Header  | Second Header | First Header  | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | First Header  | Second Header | First Header  | Second Header |
+| Content Cell  | Content Cell  | First Header  | Second Header | First Header  | Second Header |
 
 ### Target Triplet
 
