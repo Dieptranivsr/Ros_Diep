@@ -8,3 +8,12 @@ This tutorial shows the basics of Offboard control with MAVROS, using an Iris qu
 ![(https://dev.px4.io/v1.9.0/assets/simulation/gazebo_offboard.webm)]
 
 
+# RUN SITL
+### Terminal 1:
+```shell
+$ roslaunch px4 mavros_posix_sitl.launch
+```
+### Terminal 2:
+```shell
+$ rosrun sitl_demo offb
+```
