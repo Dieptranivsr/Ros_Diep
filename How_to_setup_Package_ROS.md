@@ -1,16 +1,16 @@
 
-### Create a catkin Package
+### Create a catkin Package.
 ```shell
 $ cd ($Path_to_workspace)/src
 $ catkin_create_pkg <package_name> [depend1] [depend2] [depend...] ...
 ```
 
-### Build the packages in the catkin
+### Build the packages in the catkin.
 ```shell
 $ catkin build
 ```
 
-### Source the generated setup file to add the workspace to your ROS environment
+### Source the generated setup file to add the workspace to your ROS environment.
 ```shell
 $ source ($Path_to_workspace)/devel/setup.bash
 or $ . ($Path_to_workspace)/devel/setup.bash
@@ -52,4 +52,50 @@ or $ . ($Path_to_workspace)/devel/setup.bash
 
   </export>
 </package>
+```
+
+### The CMakeLists.txt file created by catkin_create_pkg will be covered in the later tutorials about building ROS code.
+```txt
+cmake_minimum_required(VERSION 3.0.2)
+project(control_basic)
+
+find_package(catkin REQUIRED COMPONENTS
+  geometry_msgs
+  mavros_msgs
+  roscpp
+  rospy
+  std_msgs
+)
+
+catkin_package(
+  INCLUDE_DIRS include
+#  LIBRARIES control_basic
+  CATKIN_DEPENDS geometry_msgs mavros_msgs roscpp rospy std_msgs
+#  DEPENDS system_lib
+)
+
+###########
+## Build ##
+###########
+
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+
+## Declare a C++ library
+# add_library(${PROJECT_NAME}
+#   src/${PROJECT_NAME}/control_basic.cpp
+# )
+
+# add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(${PROJECT_NAME}_node src/control_basic_node.cpp)
+
+target_link_libraries(${PROJECT_NAME}_node
+  ${catkin_LIBRARIES}
+)
 ```
