@@ -99,3 +99,10 @@ target_link_libraries(${PROJECT_NAME}_node
   ${catkin_LIBRARIES}
 )
 ```
+
+
+### Writing the Publisher Node
+```shell
+$ cd ($Path_to_workspace)/src
+$ gedit publisher_code.cpp
+```
