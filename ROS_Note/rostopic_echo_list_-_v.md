@@ -4,10 +4,10 @@ $ rostopic echo list -v
 
 # Published topics:
 ```
- * /mavros/esc_status [mavros_msgs/ESCStatus] 1 publisher
- * /mavros/log_transfer/raw/log_data [mavros_msgs/LogData] 1 publisher
- * /mavros/debug_value/named_value_float [mavros_msgs/DebugValue] 1 publisher
- * /mavros/param/param_value [mavros_msgs/Param] 1 publisher
+ * /mavros/esc_status                                                [mavros_msgs/ESCStatus] 1 publisher
+ * /mavros/log_transfer/raw/log_data                                 [mavros_msgs/LogData] 1 publisher
+ * /mavros/debug_value/named_value_float                             [mavros_msgs/DebugValue] 1 publisher
+ * /mavros/param/param_value                                         [mavros_msgs/Param] 1 publisher
  * /mavros/landing_target/lt_marker [geometry_msgs/Vector3Stamped] 1 publisher
  * /mavros/manual_control/control [mavros_msgs/ManualControl] 1 publisher
  * /mavros/local_position/pose_cov [geometry_msgs/PoseWithCovarianceStamped] 1 publisher
