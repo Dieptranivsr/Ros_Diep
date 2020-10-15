@@ -50,38 +50,38 @@ $ rostopic list
  * /mavros/hil/actuator_controls
  * /mavros/hil/controls
  * /mavros/hil/gps
-/mavros/hil/imu_ned
-/mavros/hil/optical_flow
-/mavros/hil/rc_inputs
-/mavros/hil/state
-/mavros/home_position/home
-/mavros/home_position/set
-/mavros/imu/data
-/mavros/imu/data_raw
-/mavros/imu/diff_pressure
-/mavros/imu/mag
-/mavros/imu/static_pressure
-/mavros/imu/temperature_baro
-/mavros/imu/temperature_imu
-/mavros/landing_target/lt_marker
-/mavros/landing_target/pose
-/mavros/landing_target/pose_in
-/mavros/local_position/accel
-/mavros/local_position/odom
-/mavros/local_position/pose
-/mavros/local_position/pose_cov
-/mavros/local_position/velocity_body
-/mavros/local_position/velocity_body_cov
-/mavros/local_position/velocity_local
-/mavros/log_transfer/raw/log_data
-/mavros/log_transfer/raw/log_entry
-/mavros/manual_control/control
-/mavros/manual_control/send
-/mavros/mission/reached
-/mavros/mission/waypoints
-/mavros/mocap/pose
-/mavros/mount_control/command
-/mavros/mount_control/orientation
+ * /mavros/hil/imu_ned
+ * /mavros/hil/optical_flow
+ * /mavros/hil/rc_inputs
+ * /mavros/hil/state
+ * /mavros/home_position/home
+ * /mavros/home_position/set
+ * /mavros/imu/data
+ * /mavros/imu/data_raw
+ * /mavros/imu/diff_pressure
+ * /mavros/imu/mag
+ * /mavros/imu/static_pressure
+ * /mavros/imu/temperature_baro
+ * /mavros/imu/temperature_imu
+ * /mavros/landing_target/lt_marker
+ * /mavros/landing_target/pose
+ * /mavros/landing_target/pose_in
+ * /mavros/local_position/accel
+ * /mavros/local_position/odom
+ * /mavros/local_position/pose
+ * /mavros/local_position/pose_cov
+ * /mavros/local_position/velocity_body
+ * /mavros/local_position/velocity_body_cov
+ * /mavros/local_position/velocity_local
+ * /mavros/log_transfer/raw/log_data
+ * /mavros/log_transfer/raw/log_entry
+ * /mavros/manual_control/control
+ * /mavros/manual_control/send
+ * /mavros/mission/reached
+ * /mavros/mission/waypoints
+ * /mavros/mocap/pose
+ * /mavros/mount_control/command
+ * /mavros/mount_control/orientation
  * /mavros/obstacle/send
  * /mavros/odometry/in
  * /mavros/odometry/out
