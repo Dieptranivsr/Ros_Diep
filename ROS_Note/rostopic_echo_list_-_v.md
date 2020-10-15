@@ -1,4 +1,9 @@
-### Published topics:
+```shell
+$ rostopic echo list -v
+```
+
+# Published topics:
+```
  * /mavros/esc_status [mavros_msgs/ESCStatus] 1 publisher
  * /mavros/log_transfer/raw/log_data [mavros_msgs/LogData] 1 publisher
  * /mavros/debug_value/named_value_float [mavros_msgs/DebugValue] 1 publisher
@@ -82,8 +87,9 @@
  * /mavros/gps_rtk/rtk_baseline [mavros_msgs/RTKBaseline] 1 publisher
  * /mavros/time_reference [sensor_msgs/TimeReference] 1 publisher
  * /gazebo/parameter_updates [dynamic_reconfigure/Config] 1 publisher
-
-Subscribed topics:
+```
+# Subscribed topics:
+```
  * /mavros/trajectory/path [nav_msgs/Path] 1 subscriber
  * /mavros/landing_target/pose [geometry_msgs/PoseStamped] 1 subscriber
  * /mavros/actuator_control [mavros_msgs/ActuatorControl] 1 subscriber
@@ -135,3 +141,4 @@ Subscribed topics:
  * /mavros/adsb/send [mavros_msgs/ADSBVehicle] 1 subscriber
  * /mavros/setpoint_trajectory/local [trajectory_msgs/MultiDOFJointTrajectory] 1 subscriber
  * /mavros/home_position/set [mavros_msgs/HomePosition] 1 subscriber
+```
