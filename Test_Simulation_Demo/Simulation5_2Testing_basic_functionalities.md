@@ -1,4 +1,4 @@
-$ Using relative cmd_vel velocity commands in OFFBOARD mode
+# Using relative cmd_vel velocity commands in OFFBOARD mode
 
 ```shell
  * Terminal 1
