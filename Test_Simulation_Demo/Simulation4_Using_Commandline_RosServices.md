@@ -9,17 +9,22 @@ $ roslaunch px4 mavros_posix_sitl.launch
 $ rosrun drone_sim mode_publisher.py
 
  * Terminal 3
- $ rostopic echo /mavros/state
+$ rostopic echo /mavros/state
  
  * Terminal 4
- $ rosrun drone_sim arming_call.py
- 
+$ rosrun drone_sim arming_call.py
+$ rosservice list
+$ rosservice args /mavros/cmd/arming                  ---> show argument of rosserrvice "/mavros/cmd/arming"
+$ rosservice call /mavros/cmd/arming 1
+$ rosservice call /mavros/cmd/arming 0
+$ rosservice args /mavros/cmd/takeoff                 ---> show argument of rosserrvice "/mavros/cmd/takeoff"
+$ rosservice call /mavros/cmd/takeoff 10 10 50 50 50 
 ```
 
 ```shell
  * Terminal 4
- $ rosrun drone_sim arming_call.py
- $ rosservice list 
+$ rosrun drone_sim arming_call.py
+$ rosservice list 
 /gazebo/apply_body_wrench
 /gazebo/apply_joint_effort
 /gazebo/clear_body_wrenches
