@@ -37,7 +37,7 @@ $ rosservice list
 /mavros/cmd/arming
 /mavros/cmd/command
 /mavros/cmd/command_int
-/mavros/cmd/land
+/mavros/cmd/land                                 args : "min_pitch yaw latitude longitude altitude"
 /mavros/cmd/set_home
 /mavros/cmd/takeoff
 /mavros/cmd/trigger_control
