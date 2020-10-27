@@ -1,3 +1,5 @@
+# Dynamic Reconfigure
+## Description
 The dynamic_reconfigure package provides a means to update parameters at runtime without having to restart the node.
 
 At present, the focus of dynamic_reconfigure is on providing a standard way to expose a subset of a node's parameters to external reconfiguration. 
