@@ -6,7 +6,7 @@ $ roslaunch px4 posix_sitl.launch
 $ roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 
  * Terminal 3
-$ python  ~/DroneIVSR/GAAS/demo/tutorial_2/2_Struction_from_Motion/px4_mavros_run.py
+$ python ~/DroneIVSR/GAAS/demo/tutorial_2/2_Struction_from_Motion/px4_mavros_run.py
 Px4 Controller Initialized!
 Vehicle Took Off!
 
