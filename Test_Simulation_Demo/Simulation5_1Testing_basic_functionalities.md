@@ -1,3 +1,4 @@
+# Launching the 3DR Solo simulation. Testing basic functionalities: Arm motors, takeoff, hover and land
 
 ```shell
  * Terminal 1
