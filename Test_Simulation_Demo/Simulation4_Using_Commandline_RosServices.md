@@ -14,12 +14,16 @@ $ rostopic echo /mavros/state
  * Terminal 4
 $ rosrun drone_sim arming_call.py
 $ rosservice list
-$ rosservice args /mavros/cmd/arming                  ---> show argument of rosserrvice "/mavros/cmd/arming"
+$ rosservice args /mavros/cmd/arming              ---> show argument of rosserrvice "/mavros/cmd/arming"
 $ rosservice call /mavros/cmd/arming 1
 $ rosservice call /mavros/cmd/arming 0
-$ rosservice args /mavros/cmd/takeoff                 ---> show argument of rosserrvice "/mavros/cmd/takeoff"
+$ rosservice args /mavros/cmd/takeoff             ---> show argument of rosserrvice "/mavros/cmd/takeoff"
 $ rosservice call /mavros/cmd/takeoff 10 10 50 50 50 
+
+ * Terminal 5
+$ rqt_graph
 ```
+![Screenshot from 2020-10-27 15-01-27](https://user-images.githubusercontent.com/69444682/97275115-1dc44700-1868-11eb-84d9-f130b3949b4f.png)
 
 ```shell
  * Terminal 4
