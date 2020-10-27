@@ -17,7 +17,7 @@ $ rosrun mavros mavsafety arm
 $ rosrun mavros mavsys mode -c OFFBOARD
 Mode changed.
 
-* Terminal 5
+ * Terminal 5
 $ rostopic pub -r 20 /mavros/setpoint_velocity/cmd_vel_unstamped  geometry_msgs/Twist "linear:
   x: 1.0
   y: 0.0
