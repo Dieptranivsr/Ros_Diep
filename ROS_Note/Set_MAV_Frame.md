@@ -1,25 +1,24 @@
 # Set MAV_FRAME for setpoints
-```
-# [[[cog:
-# from pymavlink.dialects.v20 import common
-#
-# def decl_enum(ename, pfx='', bsz=8):
-#     enum = sorted(common.enums[ename].items())
-#     enum.pop() # remove ENUM_END
-#
-#     cog.outl("# " + ename)
-#     for k, e in enum:
-#         sn = e.name[len(ename) + 1:]
-#         l = "uint{bsz} {pfx}{sn} = {k}".format(**locals())
-#         if e.description:
-#             l += ' ' * (40 - len(l)) + ' # ' + e.description
-#         cog.outl(l)
-#
-# decl_enum('MAV_FRAME', 'FRAME_')
-# ]]]
+```python
+from pymavlink.dialects.v20 import common
+
+def decl_enum(ename, pfx='', bsz=8):
+    enum = sorted(common.enums[ename].items())
+    enum.pop() # remove ENUM_END
+
+    cog.outl("# " + ename)
+      for k, e in enum:
+         sn = e.name[len(ename) + 1:]
+         l = "uint{bsz} {pfx}{sn} = {k}".format(**locals())
+         if e.description:
+             l += ' ' * (40 - len(l)) + ' # ' + e.description
+         cog.outl(l)
+
+decl_enum('MAV_FRAME', 'FRAME_')
 ```
 
 # MAV_FRAME
+```c
 uint8 FRAME_GLOBAL = 0                   # Global (WGS84) coordinate frame + MSL altitude. First value / x: latitude, second value / y: longitude, third value / z: positive altitude over mean sea level (MSL).
 uint8 FRAME_LOCAL_NED = 1                # Local coordinate frame, Z-down (x: north, y: east, z: down).
 uint8 FRAME_MISSION = 2                  # NOT a coordinate frame, indicates a mission command.
@@ -40,7 +39,8 @@ uint8 FRAME_VISION_NED = 16              # Odometry local coordinate frame of da
 uint8 FRAME_VISION_ENU = 17              # Odometry local coordinate frame of data given by a vision estimation system, Z-up (x: east, y: north, z: up).
 uint8 FRAME_ESTIM_NED = 18               # Odometry local coordinate frame of data given by an estimator running onboard the vehicle, Z-down (x: north, y: east, z: down).
 uint8 FRAME_ESTIM_ENU = 19               # Odometry local coordinate frame of data given by an estimator running onboard the vehicle, Z-up (x: east, y: noth, z: up).
-# [[[end]]] (checksum: 4fd94c3c9c8cf1e62b10bc7dc66e4692)
+```
+[[[end]]] (checksum: 4fd94c3c9c8cf1e62b10bc7dc66e4692)
 
 uint8 mav_frame
 ---
