@@ -1,5 +1,5 @@
 # Set MAV_FRAME for setpoints
-
+```
 # [[[cog:
 # from pymavlink.dialects.v20 import common
 #
@@ -17,6 +17,8 @@
 #
 # decl_enum('MAV_FRAME', 'FRAME_')
 # ]]]
+```
+
 # MAV_FRAME
 uint8 FRAME_GLOBAL = 0                   # Global (WGS84) coordinate frame + MSL altitude. First value / x: latitude, second value / y: longitude, third value / z: positive altitude over mean sea level (MSL).
 uint8 FRAME_LOCAL_NED = 1                # Local coordinate frame, Z-down (x: north, y: east, z: down).
