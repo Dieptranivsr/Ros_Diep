@@ -4,7 +4,9 @@
 ```shell
  * Terminal 1
 $ roslaunch px4 mavros_posix_sitl.launch
+
  * Terminal 2
 $ rosrun drone_sim mode_publisher.py
+
  * Terminal 3
 ```
