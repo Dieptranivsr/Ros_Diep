@@ -16,9 +16,19 @@ Small amounts of information that may be useful to user. Examples:
 ```
 ### WARN
 ```
-Information that the user may find alarming, and may affect the output of the application, but is part of the expected working of the system. Examples:
+Information that the user may find alarming, and may affect the output of the application, 
+but is part of the expected working of the system. Examples:
  * "Could not load configuration file from <path>. Using defaults."
 ```
 ### ERROR
-
+```
+Something serious (but recoverable) has gone wrong. Examples:
+ * "Haven't received an update on topic X for 10 seconds. 
+    Stopping robot until X continues broadcasting. "
+ * "Received unexpected NaN value in transform X. Skipping ..."
+```
 ### FATAL
+```
+Something unrecoverable has happened. Examples:
+ * "Motors have caught fires!"
+```
