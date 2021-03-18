@@ -23,3 +23,5 @@ Edit file .bashrc
 Comment path to px4 
 ```
 ![Screenshot from 2021-03-18 14-51-03](https://user-images.githubusercontent.com/69444682/111590980-62418680-87f9-11eb-8a80-a72402c8dc83.png)
+### Result:
+![Screenshot from 2021-03-18 16-44-05](https://user-images.githubusercontent.com/69444682/111605811-2c0c0300-8809-11eb-8ac8-54f843a057cc.png)
