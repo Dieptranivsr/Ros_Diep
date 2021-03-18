@@ -15,3 +15,11 @@ Error for Parameters on Gazebo "COM_OBS_AVOID" 1 Flag to anable obstacle avoidan
 Fix to "0"
 ```
 ![Screenshot from 2021-03-15 18-26-31](https://user-images.githubusercontent.com/69444682/111270988-2d033000-8663-11eb-8aac-93e05e66efa5.png)
+
+## Date 3-18th-2021
+### How to run ROS package - RotorS <url: https://github.com/ethz-asl/rotors_simulator.git>
+```shell
+Edit file .bashrc
+Comment path to px4 
+```
+![Screenshot from 2021-03-18 14-51-03](https://user-images.githubusercontent.com/69444682/111590980-62418680-87f9-11eb-8a80-a72402c8dc83.png)
