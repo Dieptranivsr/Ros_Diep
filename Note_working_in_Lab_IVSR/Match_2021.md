@@ -33,7 +33,9 @@ Fixing error in gazebo_opticalflow_plugin.h
 
 error: ‘TRUE’ was not declared in this scope
 #define HAS_GYRO TRUE
+
 ![Screenshot from 2021-03-21 22-28-34](https://user-images.githubusercontent.com/69444682/111910787-6093ef00-8a95-11eb-9d3f-455f7f191e2e.png)
+
 changing this to:
 #define HAS_GYRO true
 
