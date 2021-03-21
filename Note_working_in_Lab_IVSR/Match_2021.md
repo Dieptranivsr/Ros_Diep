@@ -25,3 +25,15 @@ Comment path to px4
 ![Screenshot from 2021-03-18 14-51-03](https://user-images.githubusercontent.com/69444682/111590980-62418680-87f9-11eb-8a80-a72402c8dc83.png)
 ### Result:
 ![Screenshot from 2021-03-18 16-44-05](https://user-images.githubusercontent.com/69444682/111605811-2c0c0300-8809-11eb-8ac8-54f843a057cc.png)
+
+
+## Date 3-21th-2021
+### Set up px4
+Fixing error in gazebo_opticalflow_plugin.h
+
+error: ‘TRUE’ was not declared in this scope
+#define HAS_GYRO TRUE
+![Screenshot from 2021-03-21 22-28-34](https://user-images.githubusercontent.com/69444682/111910787-6093ef00-8a95-11eb-9d3f-455f7f191e2e.png)
+changing this to:
+#define HAS_GYRO true
+
