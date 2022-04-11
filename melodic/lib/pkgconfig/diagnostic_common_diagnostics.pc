@@ -1,8 +1,0 @@
-prefix=/opt/ros/melodic
-
-Name: diagnostic_common_diagnostics
-Description: Description of diagnostic_common_diagnostics
-Version: 1.9.5
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
